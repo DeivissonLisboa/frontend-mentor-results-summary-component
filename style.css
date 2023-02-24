@@ -230,3 +230,22 @@ button:focus {
 .padding-4 {
   padding: var(--padding-4);
 }
+
+@media (width > 40em) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  main {
+    width: 35em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 2rem;
+    box-shadow: 0 20px 50px 10px hsl(221, 100%, 96%);
+  }
+
+  header {
+    border-radius: 2rem;
+  }
+}
