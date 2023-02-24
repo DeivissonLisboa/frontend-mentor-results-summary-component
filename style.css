@@ -11,12 +11,12 @@
   --clr-neutral-3: hsl(241, 100%, 89%);
   --clr-neutral-4: hsl(224, 30%, 27%);
 
-  --graditent-1: linear-gradient(
+  --gradient-1: linear-gradient(
     to bottom,
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
-  --graditent-2: linear-gradient(
+  --gradient-2: linear-gradient(
     to bottom,
     hsla(256, 72%, 46%, 1),
     hsla(241, 72%, 46%, 0)
@@ -27,11 +27,119 @@
   --fs-3: 1.5rem;
   --fs-4: 2rem;
 
-  --fw-500: 500;
-  --fw-700: 700;
-  --fw-800: 800;
+  --fw-1: 500;
+  --fw-2: 700;
+  --fw-3: 800;
+
+  --padding-1: 1rem;
+  --padding-2: 1.25rem;
+  --padding-3: 1.5rem;
+  --padding-4: 2rem;
 }
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  font-size: var(--fs-1);
+}
+
+/* Components */
+
+/* utilities */
+.clr-primary-1 {
+  color: var(--clr-primary-1);
+}
+.clr-primary-2 {
+  color: var(--clr-primary-2);
+}
+.clr-primary-3 {
+  color: var(--clr-primary-3);
+}
+.clr-primary-4 {
+  color: var(--clr-primary-4);
+}
+
+.clr-neutral-1 {
+  color: var(--clr-neutral-1);
+}
+.clr-neutral-2 {
+  color: var(--clr-neutral-2);
+}
+.clr-neutral-3 {
+  color: var(--clr-neutral-3);
+}
+.clr-neutral-4 {
+  color: var(--clr-neutral-4);
+}
+
+.bg-primary-1 {
+  background-color: var(--clr-primary-1);
+}
+.bg-primary-2 {
+  background-color: var(--clr-primary-2);
+}
+.bg-primary-3 {
+  background-color: var(--clr-primary-3);
+}
+.bg-primary-4 {
+  background-color: var(--clr-primary-4);
+}
+
+.bg-neutral-1 {
+  background-color: var(--clr-neutral-1);
+}
+.bg-neutral-2 {
+  background-color: var(--clr-neutral-2);
+}
+.bg-neutral-3 {
+  background-color: var(--clr-neutral-3);
+}
+.bg-neutral-4 {
+  background-color: var(--clr-neutral-4);
+}
+
+.bg-gradient-1 {
+  background-image: var(--gradient-1);
+}
+.bg-gradient-2 {
+  background-image: var(--gradient-2);
+}
+
+.fs-1 {
+  font-size: var(--fs-1);
+}
+.fs-2 {
+  font-size: var(--fs-2);
+}
+.fs-3 {
+  font-size: var(--fs-3);
+}
+.fs-4 {
+  font-size: var(--fs-4);
+}
+
+.fw-1 {
+  font-weight: var(--fw-1);
+}
+.fw-2 {
+  font-weight: var(--fw-2);
+}
+.fw-3 {
+  font-weight: var(--fw-3);
+}
+
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+.padding-1 {
+  padding: var(--padding-1);
+}
+.padding-2 {
+  padding: var(--padding-2);
+}
+.padding-3 {
+  padding: var(--padding-3);
+}
+.padding-4 {
+  padding: var(--padding-4);
 }
