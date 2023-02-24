@@ -248,4 +248,8 @@ button:focus {
   header {
     border-radius: 2rem;
   }
+
+  .flow > * + * {
+    margin-top: 1.25rem;
+  }
 }
