@@ -22,10 +22,11 @@
     hsla(241, 72%, 46%, 0)
   );
 
-  --fs-1: 1.125rem;
-  --fs-2: 1.25rem;
-  --fs-3: 1.5rem;
-  --fs-4: 3rem;
+  --fs-1: 1rem;
+  --fs-2: 1.125rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.5rem;
+  --fs-5: 2.5rem;
 
   --fw-1: 500;
   --fw-2: 700;
@@ -40,6 +41,7 @@
 body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: var(--fs-1);
+  overflow: hidden;
 }
 
 /* Components */
@@ -52,8 +54,8 @@ header {
 
 .circle {
   background-image: var(--gradient-2);
-  width: 8em;
-  height: 8em;
+  width: 7em;
+  height: 7em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +67,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 5px;
 }
 
@@ -89,6 +91,24 @@ header {
 .score span {
   margin-right: 0.25rem;
   color: #000;
+}
+
+button {
+  width: 100%;
+  background-color: var(--clr-neutral-4);
+  color: var(--clr-neutral-1);
+  border: none;
+  border-radius: 5rem;
+  padding: 0.75rem 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: var(--gradient-1);
+}
+
+button:focus {
+  outline-color: transparent;
 }
 
 /* utilities */
@@ -176,6 +196,9 @@ header {
 .fs-4 {
   font-size: var(--fs-4);
 }
+.fs-5 {
+  font-size: var(--fs-5);
+}
 
 .fw-1 {
   font-weight: var(--fw-1);
@@ -192,7 +215,7 @@ header {
 }
 
 .flow > * + * {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 .padding-1 {
